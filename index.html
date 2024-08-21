@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,84 @@
     <!-- daisyUI+tailwind css cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- color  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'text-color': '#ABEF5F',
+                'text-color-2': 'rgba(171, 239, 95, 0.5)',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- icon  -->
+      <script src="https://kit.fontawesome.com/ed00ea4d14.js" crossorigin="anonymous"></script>
+      <!-- font  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <style>
+          .font-manrope{
+              font-family: "Manrope", sans-serif;
+          }
+      </style>
 </head>
-<body>
-    <header></header>
+<body class="font-manrope text-[#737373]">
+    <header class=" md:container mx-auto lg:px-10 px-2 py-2  mb-32">
+        <nav >
+            <div class="navbar flex items-center justify-between bg-base-100">
+                <div class="flex lg:navbar-start">
+                    <div class="flex justify-center items-center gap-3">
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i>
+                        <a class=" font-extrabold text-2xl md:text-3xl text-[#212121]">Rinterio</a>
+                    </div>
+                  <div class="dropdown ">
+                    
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Home </a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Services</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Portfolio</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Blogs</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Contact Us</a></li> 
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Home </a></li>
+                    <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Services</a></li>
+                    <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Portfolio</a></li>
+                    <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Blogs</a></li>
+                    <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="lg:navbar-end flex gap-2 ">
+                    <i class="fa-solid fa-magnifying-glass bg-[#FFFFFF] border border-1 border-[#E9E9E9] rounded-full p-3 hidden md:flex"></i>
+                    <i class="fa-solid fa-cart-shopping  bg-[#FFFFFF] border border-1 border-[#E9E9E9] rounded-full p-3 hidden md:flex"></i>
+                  <a class="btn bg-hockey-primary btn-outline text-black bg-text-color md:px-6 rounded-full border-none text-xl font-extrabold hidden md:flex">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-white bg-black rounded-full "></i>
+                </a>
+                
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars bg-[#FFFFFF] border border-1 border-[#E9E9E9] rounded-full p-3"></i>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <div class="flex flex-col items-center justify-center space-y-6 mt-14 text-center">
+            <img src="./assets/banner.png" alt="" class="">
+            <h1 class="text-[#212121] font-extrabold text-2xl md:text-4xl lg:text-6xl w-5/6">A barn house of this design has a striking appearance</h1>
+            <p class="w-5/6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-hockey-primary btn-outline text-black bg-text-color-2 md:px-6 rounded-full border-none text-xl font-extrabold hidden md:flex">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i> 
+            </button>
+        </div>
+
+    </header>
     <main></main>
     <footer></footer>
 </body>
