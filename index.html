@@ -32,6 +32,9 @@
           .font-manrope{
               font-family: "Manrope", sans-serif;
           }
+          .bg-image{
+            background-image: url(./assets/bg.jpg);
+          }
       </style>
 </head>
 <body class="font-manrope text-[#737373] ">
@@ -215,7 +218,7 @@
           </div>
         </div>
       </section>
-      <section class="md:container mx-auto lg:px-32 px-2 py-2  mb-32 pb-32">
+      <section class="md:container mx-auto lg:px-32 px-2 py-2 mb-32">
         <div class="flex flex-col text-center space-y-6 items-center">
           <button class="btn btn-outline text-black bg-text-color-3 md:px-6 rounded-full border-none text-xl font-bold "><i class="fa-solid fa-arrow-right"></i>How we works </button>
           <h1 class="text-[#212121] font-bold text-2xl md:text-4xl lg:text-5xl"> Our Latest Portfolio</h1>
@@ -223,7 +226,7 @@
          </div>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
           <!-- one card -->
-            <div class="flex flex-col items-center md:flex-row p-4 col-span-3 m-4 border border-1 border-[#E9E9E9] rounded-xl">
+            <div class="flex flex-col items-center md:flex-row p-4 md:col-span-3 m-4 border border-1 border-[#E9E9E9] rounded-xl">
               <div>
                 <img src="./assets/img1.png" alt="" class="w-[295px] h-[197px] lg:w-[260px]">
               </div>
@@ -234,36 +237,72 @@
                 </a>
               </div>
             </div>
-            <div class="border border-1 border-[#E9E9E9] rounded-xl col-span-1  pt-6  pb-6 lg:p-4 m-4 flex items-center justify-center">
+            <div class="border border-1 border-[#E9E9E9] rounded-xl md:col-span-1  pt-6  pb-6 lg:p-4 m-4 flex items-center justify-center">
               <img src="./assets/img2.png" alt="" class=" w-[295px] h-[197px] lg:w-[326px]">
             </div>
+            <div class=" order-3 lg:order-1 border border-1 border-[#E9E9E9] rounded-xl md:col-span-1 pt-6 pb-6 lg:p-4 m-4 flex items-center justify-center">
+              <img src="./assets/img3.png" alt="" class="w-[295px] h-[197px] lg:w-[226px]">
             </div>
-            <!-- two card -->
-             
-              <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 " >
-                <div class=" order-3 lg:order-1 border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4 flex items-center justify-center">
-                  <img src="./assets/img3.png" alt="" class="w-[295px] h-[197px] lg:w-[226px]">
-                </div>
-                <div class="order-2 flex flex-col  items-center  md:flex-row p-4 col-span-2 m-4 border border-1 border-[#E9E9E9] rounded-xl">
-                  <div>
-                    <img src="./assets/img4.png" alt="" class="w-[295px] h-[197px] lg:w-[260px]">
-                  </div>
-                  <div class="ml-7">
-                    <h1 class="font-extrabold text-2xl text-[#494949] pb-4">Commercial</h1>
-                    <p class=" font-medium text-sm"> The barn house captivates with its blend of rustic charm and modern. </p>
-                    <a class="text-black rounded-full border-none text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i> 
-                    </a>
-                  </div>
-                </div>
-                <div class=" order-1 lg:order-3 border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4 flex  items-center justify-center">
-                  <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
-                </div>
-              </div> 
-              <div class=" lg:hidden border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4  flex items-center justify-center">
-                <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
-              </div>  
+            <div class="order-2 flex flex-col  items-center  md:flex-row p-4 md:col-span-3 lg:col-span-2 m-4 border border-1 border-[#E9E9E9] rounded-xl">
+              <div>
+                <img src="./assets/img4.png" alt="" class="w-[295px] h-[197px] lg:w-[260px]">
+              </div>
+              <div class="ml-7">
+                <h1 class="font-extrabold text-2xl text-[#494949] pb-4">Commercial</h1>
+                <p class=" font-medium text-sm"> The barn house captivates with its blend of rustic charm and modern. </p>
+                <a class="text-black rounded-full border-none text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i> 
+                </a>
+              </div>
+            </div>
+            <div class=" order-1 lg:order-3 border border-1 border-[#E9E9E9] rounded-xl md:col-span-1 pt-6 pb-6 lg:p-4 m-4 flex  items-center justify-center">
+              <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
+            </div>
+            <div class=" lg:hidden border border-1 border-[#E9E9E9] rounded-xl md:col-span-1 pt-6 pb-6 lg:p-4 m-4  flex items-center justify-center order-3">
+              <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
+            </div> 
+            </div> 
       </section>
       <!-- read our articles -->
+       <section></section>
+      <!-- discuss project section -->
+       <section class="bg-image md:container mx-auto lg:px-60 px-2 py-2 mb-32">
+        <div class="flex flex-col text-center space-y-6 items-center">
+          <button class="btn btn-outline text-black bg-text-color-3 md:px-6 rounded-full border-none text-xl font-bold mt-20 "><i class="fa-solid fa-arrow-right"></i>Let’s Connect </button>
+          <h1 class="text-[#212121] font-bold text-2xl md:text-4xl lg:text-5xl">Let’s Discuss Next Project</h1>
+          <p class="p-5 lg:w-[680px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+         </div>
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
+          <div>
+            <label class="input border-none rounded-full flex items-center gap-2">
+              <input type="text" class="grow" placeholder="First Name*" />
+            </label>
+          </div>
+         <div>
+          <label class="input border-none rounded-full flex items-center gap-2">
+            <input type="text" class="grow" placeholder="Last Name*" />
+          </label>
+         </div>
+          <div>
+            <label class="input border-none rounded-full flex items-center gap-2">
+              <input type="number" class="grow" placeholder="Phone Number*">
+            </label>
+          </div>
+          <div>
+            <label class="input border-none rounded-full flex items-center gap-2">
+              <input type="email" class="grow" placeholder="Email Number*"> 
+            </label>
+          </div>
+          <div class="md:col-span-2"> 
+              <textarea
+              placeholder=" Write your message here" rows="6"
+              class="textarea border-none rounded-xl  textarea-lg w-full max-w-full"></textarea>
+          </div>
+          <div class="md:col-span-2 mb-10 md:mb-20 lg:mb-28">
+            <button class="btn btn-outline text-black bg-text-color md:px-6 rounded-full border-none text-xl font-extrabold w-full   ">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-white bg-black rounded-full"></i>
+            </button>  
+          </div>
+         </div>
+       </section>
     </main>
     <footer></footer>
 </body>
