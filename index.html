@@ -16,6 +16,7 @@
                 clifford: '#da373d',
                 'text-color': '#ABEF5F',
                 'text-color-2': 'rgba(171, 239, 95, 0.5)',
+                'text-color-3': 'rgba(171, 239, 95, 0.2)',
               }
             }
           }
@@ -62,16 +63,17 @@
                   <div class="dropdown"> 
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <i class="fa-solid fa-bars bg-[#FFFFFF] border border-1 border-[#E9E9E9] rounded-full p-3"></i>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Home </a></li>
-                          <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Services</a></li>
-                          <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Portfolio</a></li>
-                          <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Blogs</a></li>
-                          <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Contact Us</a></li> 
-                        </ul>
+                       
                       </div> 
+                      <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-20 p-2 shadow">
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Home </a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Services</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a>Portfolio</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Blogs</a></li>
+                      <li class="hover:text-[#494949] hover:font-extrabold text-sm"><a> Contact Us</a></li> 
+                    </ul>
                 </div>
                 </div>  
               </div>       
@@ -213,6 +215,55 @@
           </div>
         </div>
       </section>
+      <section class="md:container mx-auto lg:px-32 px-2 py-2  mb-32 pb-32">
+        <div class="flex flex-col text-center space-y-6 items-center">
+          <button class="btn btn-outline text-black bg-text-color-3 md:px-6 rounded-full border-none text-xl font-bold "><i class="fa-solid fa-arrow-right"></i>How we works </button>
+          <h1 class="text-[#212121] font-bold text-2xl md:text-4xl lg:text-5xl"> Our Latest Portfolio</h1>
+          <p class="p-5 lg:w-[680px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+         </div>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+          <!-- one card -->
+            <div class="flex flex-col items-center md:flex-row p-4 col-span-3 m-4 border border-1 border-[#E9E9E9] rounded-xl">
+              <div>
+                <img src="./assets/img1.png" alt="" class="w-[295px] h-[197px] lg:w-[260px]">
+              </div>
+              <div class="ml-7">
+                <h1 class="font-extrabold text-2xl text-[#494949] pb-4">Commercial</h1>
+                <p class=" font-medium text-sm">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                <a class="text-black rounded-full border-none text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i> 
+                </a>
+              </div>
+            </div>
+            <div class="border border-1 border-[#E9E9E9] rounded-xl col-span-1  pt-6  pb-6 lg:p-4 m-4 flex items-center justify-center">
+              <img src="./assets/img2.png" alt="" class=" w-[295px] h-[197px] lg:w-[326px]">
+            </div>
+            </div>
+            <!-- two card -->
+             
+              <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 " >
+                <div class=" order-3 lg:order-1 border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4 flex items-center justify-center">
+                  <img src="./assets/img3.png" alt="" class="w-[295px] h-[197px] lg:w-[226px]">
+                </div>
+                <div class="order-2 flex flex-col  items-center  md:flex-row p-4 col-span-2 m-4 border border-1 border-[#E9E9E9] rounded-xl">
+                  <div>
+                    <img src="./assets/img4.png" alt="" class="w-[295px] h-[197px] lg:w-[260px]">
+                  </div>
+                  <div class="ml-7">
+                    <h1 class="font-extrabold text-2xl text-[#494949] pb-4">Commercial</h1>
+                    <p class=" font-medium text-sm"> The barn house captivates with its blend of rustic charm and modern. </p>
+                    <a class="text-black rounded-full border-none text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-3  text-[#1C1C1C] bg-text-color rounded-full "></i> 
+                    </a>
+                  </div>
+                </div>
+                <div class=" order-1 lg:order-3 border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4 flex  items-center justify-center">
+                  <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
+                </div>
+              </div> 
+              <div class=" lg:hidden border border-1 border-[#E9E9E9] rounded-xl col-span-1 pt-6 pb-6 lg:p-4 m-4  flex items-center justify-center">
+                <img src="./assets/img5.png" alt="" class="w-[295px] h-[197px] lg:w-[226px] ">
+              </div>  
+      </section>
+      <!-- read our articles -->
     </main>
     <footer></footer>
 </body>
